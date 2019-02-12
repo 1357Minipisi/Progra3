@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f6" green="f6" red="e2" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField1" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField2" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField3" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField4" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField5" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField6" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField7" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField8" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField9" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                      <Component id="jTextField10" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="sb_emp1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp3" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp4" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp5" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp6" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp7" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp8" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp9" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sb_emp10" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jLabel3" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="boni_10" max="32767" attributes="0"/>
+                      <Component id="boni_9" alignment="1" max="32767" attributes="0"/>
+                      <Component id="boni_8" alignment="1" max="32767" attributes="0"/>
+                      <Component id="boni_7" alignment="1" max="32767" attributes="0"/>
+                      <Component id="boni_6" alignment="1" max="32767" attributes="0"/>
+                      <Component id="boni_5" alignment="1" max="32767" attributes="0"/>
+                      <Component id="boni_4" alignment="1" max="32767" attributes="0"/>
+                      <Component id="boni_3" alignment="1" max="32767" attributes="0"/>
+                      <Component id="boni_2" alignment="1" max="32767" attributes="0"/>
+                      <Component id="boni_1" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jLabel4" alignment="1" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="comi_1" max="32767" attributes="0"/>
+                              <Component id="jLabel5" pref="86" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLabel8" pref="55" max="32767" attributes="0"/>
+                              <Component id="ig_1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="comi_10" max="32767" attributes="0"/>
+                              <Component id="comi_3" alignment="0" max="32767" attributes="0"/>
+                              <Component id="comi_4" alignment="1" max="32767" attributes="0"/>
+                              <Component id="comi_5" alignment="1" max="32767" attributes="0"/>
+                              <Component id="comi_6" alignment="1" max="32767" attributes="0"/>
+                              <Component id="comi_7" alignment="1" max="32767" attributes="0"/>
+                              <Component id="comi_8" alignment="1" max="32767" attributes="0"/>
+                              <Component id="comi_9" alignment="1" max="32767" attributes="0"/>
+                              <Component id="comi_2" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="ig_2" max="32767" attributes="0"/>
+                              <Component id="ig_3" max="32767" attributes="0"/>
+                              <Component id="ig_4" max="32767" attributes="0"/>
+                              <Component id="ig_5" max="32767" attributes="0"/>
+                              <Component id="ig_6" max="32767" attributes="0"/>
+                              <Component id="ig_7" max="32767" attributes="0"/>
+                              <Component id="ig_8" max="32767" attributes="0"/>
+                              <Component id="ig_9" max="32767" attributes="0"/>
+                              <Component id="ig_10" pref="55" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel9" max="32767" attributes="0"/>
+                      <Component id="desc_1" max="32767" attributes="0"/>
+                      <Component id="desc_2" max="32767" attributes="0"/>
+                      <Component id="desc_3" max="32767" attributes="0"/>
+                      <Component id="desc_4" max="32767" attributes="0"/>
+                      <Component id="desc_5" max="32767" attributes="0"/>
+                      <Component id="desc_6" max="32767" attributes="0"/>
+                      <Component id="desc_7" max="32767" attributes="0"/>
+                      <Component id="desc_8" max="32767" attributes="0"/>
+                      <Component id="desc_9" max="32767" attributes="0"/>
+                      <Component id="desc_10" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel10" pref="82" max="32767" attributes="0"/>
+                      <Component id="isr_1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="isr_2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="isr_3" max="32767" attributes="0"/>
+                      <Component id="isr_4" max="32767" attributes="0"/>
+                      <Component id="isr_5" max="32767" attributes="0"/>
+                      <Component id="isr_6" max="32767" attributes="0"/>
+                      <Component id="isr_7" max="32767" attributes="0"/>
+                      <Component id="isr_8" max="32767" attributes="0"/>
+                      <Component id="isr_9" max="32767" attributes="0"/>
+                      <Component id="isr_10" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="st_emp5" alignment="0" pref="111" max="32767" attributes="0"/>
+                      <Component id="st_emp6" alignment="0" pref="111" max="32767" attributes="0"/>
+                      <Component id="st_emp7" alignment="0" pref="111" max="32767" attributes="0"/>
+                      <Component id="st_emp8" alignment="0" pref="111" max="32767" attributes="0"/>
+                      <Component id="st_emp9" alignment="0" pref="111" max="32767" attributes="0"/>
+                      <Component id="st_emp10" alignment="0" pref="111" max="32767" attributes="0"/>
+                      <Component id="st_emp2" alignment="0" pref="111" max="32767" attributes="0"/>
+                      <Component id="st_emp3" alignment="0" pref="111" max="32767" attributes="0"/>
+                      <Component id="st_emp4" alignment="0" max="32767" attributes="0"/>
+                      <Component id="st_emp1" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jLabel6" pref="111" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="dep_emp1" max="32767" attributes="0"/>
+                      <Component id="dep_emp2" max="32767" attributes="0"/>
+                      <Component id="dep_emp3" max="32767" attributes="0"/>
+                      <Component id="dep_emp4" max="32767" attributes="0"/>
+                      <Component id="dep_emp5" max="32767" attributes="0"/>
+                      <Component id="dep_emp6" max="32767" attributes="0"/>
+                      <Component id="dep_emp7" max="32767" attributes="0"/>
+                      <Component id="dep_emp8" max="32767" attributes="0"/>
+                      <Component id="dep_emp9" max="32767" attributes="0"/>
+                      <Component id="dep_emp10" max="32767" attributes="0"/>
+                      <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
+                          <Component id="jLabel59" min="-2" pref="139" max="-2" attributes="0"/>
+                          <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                          <Component id="dep1" min="-2" pref="93" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="dep2" min="-2" pref="134" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="dep3" min="-2" pref="139" max="-2" attributes="0"/>
+                          <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
+                          <Component id="dep4" min="-2" pref="101" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="dep5" min="-2" pref="108" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
+                          <Component id="jLabel58" min="-2" pref="139" max="-2" attributes="0"/>
+                          <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                          <Component id="jLabel60" min="-2" pref="93" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jLabel61" min="-2" pref="134" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="jLabel62" min="-2" pref="139" max="-2" attributes="0"/>
+                          <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
+                          <Component id="jLabel63" min="-2" pref="101" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jLabel64" min="-2" pref="108" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="421" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="196" pref="207" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel2" max="32767" attributes="0"/>
+                      <Component id="jLabel3" max="32767" attributes="0"/>
+                      <Component id="jLabel4" max="32767" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel9" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jLabel8" alignment="1" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_1" max="32767" attributes="0"/>
+                      <Component id="desc_1" max="32767" attributes="0"/>
+                      <Component id="ig_1" max="32767" attributes="0"/>
+                      <Component id="jTextField1" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp1" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_1" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_1" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp1" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp1" pref="28" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_2" max="32767" attributes="0"/>
+                      <Component id="desc_2" max="32767" attributes="0"/>
+                      <Component id="jTextField2" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp2" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_2" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_2" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp2" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp2" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_2" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_3" max="32767" attributes="0"/>
+                      <Component id="desc_3" max="32767" attributes="0"/>
+                      <Component id="jTextField3" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp3" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_3" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_3" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp3" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp3" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_3" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_4" max="32767" attributes="0"/>
+                      <Component id="desc_4" max="32767" attributes="0"/>
+                      <Component id="jTextField4" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp4" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_4" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_4" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp4" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp4" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_4" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_5" max="32767" attributes="0"/>
+                      <Component id="desc_5" max="32767" attributes="0"/>
+                      <Component id="jTextField5" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp5" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_5" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_5" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp5" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp5" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_5" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_6" max="32767" attributes="0"/>
+                      <Component id="desc_6" max="32767" attributes="0"/>
+                      <Component id="jTextField6" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp6" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_6" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_6" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp6" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp6" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_6" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="desc_7" max="32767" attributes="0"/>
+                      <Component id="jTextField7" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp7" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_7" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_7" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp7" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp7" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_7" max="32767" attributes="0"/>
+                      <Component id="isr_7" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_8" max="32767" attributes="0"/>
+                      <Component id="desc_8" max="32767" attributes="0"/>
+                      <Component id="jTextField8" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp8" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_8" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_8" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp8" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp8" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_8" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_9" max="32767" attributes="0"/>
+                      <Component id="desc_9" max="32767" attributes="0"/>
+                      <Component id="jTextField9" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp9" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_9" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_9" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp9" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp9" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_9" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="isr_10" max="32767" attributes="0"/>
+                      <Component id="desc_10" max="32767" attributes="0"/>
+                      <Component id="jTextField10" pref="28" max="32767" attributes="0"/>
+                      <Component id="sb_emp10" pref="28" max="32767" attributes="0"/>
+                      <Component id="boni_10" pref="28" max="32767" attributes="0"/>
+                      <Component id="comi_10" pref="28" max="32767" attributes="0"/>
+                      <Component id="st_emp10" pref="28" max="32767" attributes="0"/>
+                      <Component id="dep_emp10" pref="28" max="32767" attributes="0"/>
+                      <Component id="ig_10" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel58" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel60" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel62" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jLabel61" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel63" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jLabel64" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                          <Component id="jLabel59" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="dep1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="dep3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Component id="dep4" min="-2" pref="28" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="dep5" alignment="1" min="-2" pref="31" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="dep2" min="-2" pref="31" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="30" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Planilla"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nombre empleado"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sueldo"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Bonificasiones"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Comisiones"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sueldo liquido"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Departamento"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField1">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField2">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField3">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField4">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField4ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField5">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField5ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField6">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField6ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField7">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField7ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField8">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField8ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField9">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField9ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField10">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField10ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp6">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_6">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_6">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp6">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp6">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp7">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_7">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_7">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp7">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp7">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp8">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_8">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_8">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp8">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp8">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp9">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_9">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_9">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp9">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp9">
+        </Component>
+        <Component class="javax.swing.JLabel" name="sb_emp10">
+        </Component>
+        <Component class="javax.swing.JLabel" name="boni_10">
+        </Component>
+        <Component class="javax.swing.JLabel" name="comi_10">
+        </Component>
+        <Component class="javax.swing.JLabel" name="st_emp10">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep_emp10">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel58">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Departamento"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel59">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sueldo"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel60">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel61">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel62">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel63">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel64">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="5"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="dep5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="IGSS"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Desc. Judi."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel10">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="ISR"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_6">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_7">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_8">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_9">
+        </Component>
+        <Component class="javax.swing.JLabel" name="ig_10">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_6">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_7">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_8">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_9">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desc_10">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_5">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_6">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_7">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_8">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_9">
+        </Component>
+        <Component class="javax.swing.JLabel" name="isr_10">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
