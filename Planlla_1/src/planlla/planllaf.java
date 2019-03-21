@@ -1,5 +1,6 @@
 
 package planlla;
+import java.sql.*;
 
 public class planllaf extends javax.swing.JFrame {
 int plan[][]= new int [10][7]; //Matriz de la planilla
@@ -7,7 +8,8 @@ int depart[]=new int [5]; //vector de los departamenos
 int isr[]=new int [10];//vector para calcular el isr
 int d1=1,d2=2,d3=3,d4=4,d5=5;//variables para comparar en que departamento le corresponde
 public static int verificacion[]=new int [5];//este vector verifica que campos si se les asignara 0-boni, 1-comis, 2)-igss, 3)dec. judi, 4)isr 
-int dato0=1,dato1=1,dato2=1,dato3=1,dato4=1;
+
+
 
     public planllaf() {
         
@@ -170,6 +172,11 @@ int dato0=1,dato1=1,dato2=1,dato3=1,dato4=1;
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
+            }
+        });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
             }
         });
 
@@ -961,11 +968,12 @@ int dato0=1,dato1=1,dato2=1,dato3=1,dato4=1;
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-
+        
         
         verifica veri = new verifica();
         veri.setVisible(true);
-        
+     
+          
         
         
         
@@ -1632,6 +1640,10 @@ for(int i=0; i<=2;i++)
         }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+      
+    }//GEN-LAST:event_jTextField1KeyPressed
 
     public static void main(String args[]) {
         
