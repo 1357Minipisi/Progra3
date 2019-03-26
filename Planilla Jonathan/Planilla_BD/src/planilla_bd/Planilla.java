@@ -30,6 +30,10 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
         initComponents();
         this.setLocationRelativeTo(null);
         mostrarEmp();
+        mostrarEmp2();
+        mostrarEmp3();
+        mostrarEmp4();
+        mostrarEmp5();
     }
     
     
@@ -53,6 +57,82 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
             
         }
     }
+    void buscarEmp2(String nombre) throws SQLException
+    {
+        PreparedStatement ps= null;
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+        String sql =" SELECT * FROM empleado_nomina WHERE nombre_empleado = '"+nombre+"'";
+        try
+        {
+          Statement st= con.createStatement();
+          ResultSet rs = st.executeQuery(sql);
+          if(rs.next()){ 
+              
+                sb_emp2.setText(rs.getString("sueldo_empleado"));
+                dep_emp2.setText(rs.getString("codigo_departamento"));
+            }
+        }
+        catch (Exception e){
+            
+        }
+    }
+    void buscarEmp3(String nombre) throws SQLException
+    {
+        PreparedStatement ps= null;
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+        String sql =" SELECT * FROM empleado_nomina WHERE nombre_empleado = '"+nombre+"'";
+        try
+        {
+          Statement st= con.createStatement();
+          ResultSet rs = st.executeQuery(sql);
+          if(rs.next()){ 
+              
+                sb_emp3.setText(rs.getString("sueldo_empleado"));
+                dep_emp3.setText(rs.getString("codigo_departamento"));
+            }
+        }
+        catch (Exception e){
+            
+        }
+    }
+    void buscarEmp4(String nombre) throws SQLException
+    {
+        PreparedStatement ps= null;
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+        String sql =" SELECT * FROM empleado_nomina WHERE nombre_empleado = '"+nombre+"'";
+        try
+        {
+          Statement st= con.createStatement();
+          ResultSet rs = st.executeQuery(sql);
+          if(rs.next()){ 
+              
+                sb_emp4.setText(rs.getString("sueldo_empleado"));
+                dep_emp4.setText(rs.getString("codigo_departamento"));
+            }
+        }
+        catch (Exception e){
+            
+        }
+    }
+    void buscarEmp5(String nombre) throws SQLException
+    {
+        PreparedStatement ps= null;
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+        String sql =" SELECT * FROM empleado_nomina WHERE nombre_empleado = '"+nombre+"'";
+        try
+        {
+          Statement st= con.createStatement();
+          ResultSet rs = st.executeQuery(sql);
+          if(rs.next()){ 
+              
+                sb_emp5.setText(rs.getString("sueldo_empleado"));
+                dep_emp5.setText(rs.getString("codigo_departamento"));
+            }
+        }
+        catch (Exception e){
+            
+        }
+    }
     
     public void mostrarEmp()
     {
@@ -67,6 +147,80 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                  while(rs.next())
                   {
                       this.CB_emp1.addItem(rs.getString("nombre_empleado"));
+                  }
+              }catch (Exception e){
+                  System.out.println("Error "+e);
+              }
+    }
+    
+  
+    public void mostrarEmp2()
+    {
+        try{
+            Connection con=null;
+            Class.forName("com.mysql.jdbc.Driver");
+            con =DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+
+            Statement st=con.createStatement();
+            ResultSet rs=st.executeQuery("select * from empleado_nomina");
+            CB_emp2.addItem("");
+                 while(rs.next())
+                  {
+                      this.CB_emp2.addItem(rs.getString("nombre_empleado"));
+                  }
+              }catch (Exception e){
+                  System.out.println("Error "+e);
+              }
+    }
+    public void mostrarEmp3()
+    {
+        try{
+            Connection con=null;
+            Class.forName("com.mysql.jdbc.Driver");
+            con =DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+
+            Statement st=con.createStatement();
+            ResultSet rs=st.executeQuery("select * from empleado_nomina");
+            CB_emp3.addItem("");
+                 while(rs.next())
+                  {
+                      this.CB_emp3.addItem(rs.getString("nombre_empleado"));
+                  }
+              }catch (Exception e){
+                  System.out.println("Error "+e);
+              }
+    }
+    public void mostrarEmp4()
+    {
+        try{
+            Connection con=null;
+            Class.forName("com.mysql.jdbc.Driver");
+            con =DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+
+            Statement st=con.createStatement();
+            ResultSet rs=st.executeQuery("select * from empleado_nomina");
+            CB_emp4.addItem("");
+                 while(rs.next())
+                  {
+                      this.CB_emp4.addItem(rs.getString("nombre_empleado"));
+                  }
+              }catch (Exception e){
+                  System.out.println("Error "+e);
+              }
+    }
+    public void mostrarEmp5()
+    {
+        try{
+            Connection con=null;
+            Class.forName("com.mysql.jdbc.Driver");
+            con =DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+
+            Statement st=con.createStatement();
+            ResultSet rs=st.executeQuery("select * from empleado_nomina");
+            CB_emp5.addItem("");
+                 while(rs.next())
+                  {
+                      this.CB_emp5.addItem(rs.getString("nombre_empleado"));
                   }
               }catch (Exception e){
                   System.out.println("Error "+e);
@@ -177,10 +331,10 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         CB_emp1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        CB_emp2 = new javax.swing.JComboBox<>();
+        CB_emp3 = new javax.swing.JComboBox<>();
+        CB_emp4 = new javax.swing.JComboBox<>();
+        CB_emp5 = new javax.swing.JComboBox<>();
         jButton6 = new javax.swing.JButton();
         lb_totPlanilla = new javax.swing.JLabel();
         jComboBox6 = new javax.swing.JComboBox<>();
@@ -529,6 +683,30 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
             }
         });
 
+        CB_emp2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CB_emp2ActionPerformed(evt);
+            }
+        });
+
+        CB_emp3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CB_emp3ActionPerformed(evt);
+            }
+        });
+
+        CB_emp4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CB_emp4ActionPerformed(evt);
+            }
+        });
+
+        CB_emp5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CB_emp5ActionPerformed(evt);
+            }
+        });
+
         jButton6.setText("Calcular");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -567,10 +745,19 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
         });
 
         jButton13.setText("Salir");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
 
         jLabel13.setText("Fecha Inicial:");
 
+        date_ini.setDateFormatString("yyyy/MM/d");
+
         jLabel14.setText("Fecha final:");
+
+        date_fin.setDateFormatString("yyyy/MM/d");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 0, 51));
@@ -584,12 +771,32 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
         });
 
         jButton15.setText("jButton15");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
         jButton16.setText("jButton16");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         jButton17.setText("jButton17");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
 
         jButton18.setText("jButton18");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
 
         jButton19.setText("jButton19");
 
@@ -602,6 +809,12 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
         jButton23.setText("jButton23");
 
         jLabel12.setText("Ingrese codigo de planilla:");
+
+        txt_codPlanilla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_codPlanillaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -619,7 +832,7 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                                     .addComponent(jComboBox8, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jComboBox7, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jComboBox6, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jComboBox5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(CB_emp5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(39, 39, 39)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -629,9 +842,9 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                                     .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jComboBox4, 0, 96, Short.MAX_VALUE)
-                                    .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(CB_emp4, 0, 96, Short.MAX_VALUE)
+                                    .addComponent(CB_emp3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(CB_emp2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(CB_emp1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(39, 39, 39)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1009,7 +1222,7 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                                                 .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)))))
                                 .addGap(6, 6, 6)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CB_emp2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(sb_emp2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(boni_2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(comi_2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1020,7 +1233,7 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                                 .addGap(6, 6, 6)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(CB_emp3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(sb_emp3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(boni_3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1038,11 +1251,11 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                                         .addComponent(desc_4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(isr_4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jButton17, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE))
-                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(CB_emp4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(6, 6, 6)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButton18, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                                    .addComponent(jComboBox5)
+                                    .addComponent(CB_emp5)
                                     .addComponent(sb_emp5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(boni_5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(comi_5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1102,8 +1315,8 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(lb_totPlanilla, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lb_totPlanilla, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(32, 32, 32)
@@ -1113,9 +1326,9 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                         .addComponent(jLabel12)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lbMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lbMostrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(txt_codPlanilla)
                         .addGap(6, 6, 6))))
@@ -1151,7 +1364,7 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
         try {
             buscarEmp(StrCB_emp1);
         } catch (SQLException ex) {
-            Logger.getLogger(Buscar.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Planilla.class.getName()).log(Level.SEVERE, null, ex);
         }
         // busca y muestra
 
@@ -1160,212 +1373,245 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
     }//GEN-LAST:event_CB_emp1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        //crea el suldo conramdom de 2000 a 8000
-        plan[4][0]=2000+(int)(Math.random()*8000);
-        sb_emp5.setText(""+plan[4][0]);
-        for(int i=1; i<=4;i++)
-        {
-            //se asignan los valores para las sumas y restas no mayor de 500
-            plan[4][i]=100+(int)(Math.random()*500);
-            if(verificacion[1]==1)
+        SL=sb_emp5.getText();
+            sueldo_base[4]=Integer.parseInt(SL);
+            
+            
+            for(int i=1; i<=4;i++)
             {
-                comi_5.setText(""+plan[4][2]);
-            }
+                //se asignan los valores para las sumas y restas no mayor de 500
+                plan[4][i]=100+(int)(Math.random()*500);
+                if(verificacion[1]==1)
+                {
+                    comi_5.setText(""+plan[4][2]);
+                }
 
-            if(verificacion[2]==1)
-            {
-                ig_5.setText(""+plan[4][3]);
-            }
+                if(verificacion[2]==1)
+                {
+                    ig_5.setText(""+plan[4][3]);
+                }
 
-            if(verificacion[3]==1)
-            {
-                desc_5.setText(""+plan[4][4]);
-            }
-
-        }
-        //le asigna el valor de 250 a la bonificacion
-        plan[4][1]=250;
-        if(verificacion[0]==1)
-        {
-            boni_5.setText(""+plan[4][1]);
-        }
-        //verifica en que rango esta el suldo para calcular el isr
-        if(verificacion[4]==1)
-        {
-            if(plan[4][0]>=2600 && plan[4][0]<=5000)
-            {
-                isr[0]=(int) (plan[4][0]*0.03);
-                isr_5.setText(""+isr[0]);
-            }
-            else if(plan[4][0]>=5001 && plan[4][0]<=10000)
-            {
-
-                isr[0]=(int) (plan[4][0]*0.05);
-                isr_5.setText(""+isr[0]);
+                if(verificacion[3]==1)
+                {
+                    desc_5.setText(""+plan[4][4]);
+                }
 
             }
-        }
-        //hace la suma y restas para el sueldo liquido
-        plan[4][5]=plan[4][0]+plan[4][1]+plan[4][2]-plan[4][3]-plan[4][4]-isr[0];
-        st_emp5.setText(""+plan[4][5]);
+            //le asigna el valor de 250 a la bonificacion
+            
+            if(verificacion[0]==1)
+            {
+                plan[4][1]=250;
+                boni_5.setText(""+plan[4][1]);
+            }
+            //verifica en que rango esta el suldo para calcular el isr
+            if(verificacion[4]==1)
+            {
+                if(sueldo_base[4]>=2600 && sueldo_base[4]<=5000)
+                {
+                    isr[4]=(int) (sueldo_base[4]*0.03);
+                    isr_5.setText(""+isr[4]);
+                }
+                else if(sueldo_base[4]>=5001 && sueldo_base[4]<=10000)
+                {
 
+                    isr[4]=(int) (sueldo_base[4]*0.05);
+                    isr_5.setText(""+isr[4]);
+
+                }
+                else if(sueldo_base[4]>=10001 && sueldo_base[4]<=100000)
+                {
+
+                    isr[4]=(int) (sueldo_base[4]*0.10);
+                    isr_5.setText(""+isr[4]);
+
+                }
+            }
+            //hace la suma y restas para el sueldo liquido
+            plan[4][5]=sueldo_base[4]+plan[4][1]+plan[4][2]-plan[4][3]-plan[4][4]-isr[4];
+            st_emp5.setText(""+plan[4][5]);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        //crea el suldo conramdom de 2000 a 8000
-        plan[3][0]=2000+(int)(Math.random()*8000);
-        sb_emp4.setText(""+plan[3][0]);
-        for(int i=1; i<=4;i++)
-        {
-            //se asignan los valores para las sumas y restas no mayor de 500
-            plan[3][i]=100+(int)(Math.random()*500);
-            if(verificacion[1]==1)
+             
+SL=sb_emp4.getText();
+            sueldo_base[3]=Integer.parseInt(SL);
+            
+            
+            for(int i=1; i<=4;i++)
             {
-                comi_4.setText(""+plan[3][2]);
-            }
+                //se asignan los valores para las sumas y restas no mayor de 500
+                plan[3][i]=100+(int)(Math.random()*500);
+                if(verificacion[1]==1)
+                {
+                    comi_4.setText(""+plan[3][2]);
+                }
 
-            if(verificacion[2]==1)
-            {
-                ig_4.setText(""+plan[3][3]);
-            }
+                if(verificacion[2]==1)
+                {
+                    ig_4.setText(""+plan[3][3]);
+                }
 
-            if(verificacion[3]==1)
-            {
-                desc_4.setText(""+plan[3][4]);
-            }
-
-        }
-        //le asigna el valor de 250 a la bonificacion
-        plan[3][1]=250;
-        if(verificacion[0]==1)
-        {
-            boni_4.setText(""+plan[3][1]);
-        }
-        //verifica en que rango esta el suldo para calcular el isr
-        if(verificacion[4]==1)
-        {
-            if(plan[3][0]>=2600 && plan[3][0]<=5000)
-            {
-                isr[0]=(int) (plan[3][0]*0.03);
-                isr_4.setText(""+isr[0]);
-            }
-            else if(plan[3][0]>=5001 && plan[3][0]<=10000)
-            {
-
-                isr[0]=(int) (plan[3][0]*0.05);
-                isr_4.setText(""+isr[0]);
+                if(verificacion[3]==1)
+                {
+                    desc_4.setText(""+plan[3][4]);
+                }
 
             }
-        }
-        //hace la suma y restas para el sueldo liquido
-        plan[3][5]=plan[3][0]+plan[3][1]+plan[3][2]-plan[3][3]-plan[3][4]-isr[0];
-        st_emp4.setText(""+plan[3][5]);
+            //le asigna el valor de 250 a la bonificacion
+            
+            if(verificacion[0]==1)
+            {
+                plan[3][1]=250;
+                boni_4.setText(""+plan[3][1]);
+            }
+            //verifica en que rango esta el suldo para calcular el isr
+            if(verificacion[4]==1)
+            {
+                if(sueldo_base[3]>=2600 && sueldo_base[3]<=5000)
+                {
+                    isr[3]=(int) (sueldo_base[3]*0.03);
+                    isr_4.setText(""+isr[3]);
+                }
+                else if(sueldo_base[3]>=5001 && sueldo_base[3]<=10000)
+                {
 
+                    isr[3]=(int) (sueldo_base[3]*0.05);
+                    isr_4.setText(""+isr[3]);
+
+                }
+                else if(sueldo_base[3]>=10001 && sueldo_base[3]<=100000)
+                {
+
+                    isr[3]=(int) (sueldo_base[3]*0.10);
+                    isr_4.setText(""+isr[3]);
+
+                }
+            }
+            //hace la suma y restas para el sueldo liquido
+            plan[3][5]=sueldo_base[3]+plan[3][1]+plan[3][2]-plan[3][3]-plan[3][4]-isr[3];
+            st_emp4.setText(""+plan[3][5]);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        //crea el suldo conramdom de 2000 a 8000
-        plan[2][0]=2000+(int)(Math.random()*8000);
-        sb_emp3.setText(""+plan[2][0]);
-        for(int i=1; i<=4;i++)
-        {
-            //se asignan los valores para las sumas y restas no mayor de 500
-            plan[2][i]=100+(int)(Math.random()*500);
-            if(verificacion[1]==1)
+        
+SL=sb_emp3.getText();
+            sueldo_base[2]=Integer.parseInt(SL);
+            
+            
+            for(int i=1; i<=4;i++)
             {
-                comi_3.setText(""+plan[2][2]);
-            }
+                //se asignan los valores para las sumas y restas no mayor de 500
+                plan[2][i]=100+(int)(Math.random()*500);
+                if(verificacion[1]==1)
+                {
+                    comi_3.setText(""+plan[2][2]);
+                }
 
-            if(verificacion[2]==1)
-            {
-                ig_3.setText(""+plan[2][3]);
-            }
+                if(verificacion[2]==1)
+                {
+                    ig_3.setText(""+plan[2][3]);
+                }
 
-            if(verificacion[3]==1)
-            {
-                desc_3.setText(""+plan[2][4]);
-            }
-
-        }
-        //le asigna el valor de 250 a la bonificacion
-        plan[2][1]=250;
-        if(verificacion[0]==1)
-        {
-            boni_3.setText(""+plan[2][1]);
-        }
-        //verifica en que rango esta el suldo para calcular el isr
-        if(verificacion[4]==1)
-        {
-            if(plan[2][0]>=2600 && plan[2][0]<=5000)
-            {
-                isr[0]=(int) (plan[2][0]*0.03);
-                isr_3.setText(""+isr[0]);
-            }
-            else if(plan[2][0]>=5001 && plan[2][0]<=10000)
-            {
-
-                isr[0]=(int) (plan[2][0]*0.05);
-                isr_3.setText(""+isr[0]);
+                if(verificacion[3]==1)
+                {
+                    desc_3.setText(""+plan[2][4]);
+                }
 
             }
-        }
-        //hace la suma y restas para el sueldo liquido
-        plan[2][5]=plan[2][0]+plan[2][1]+plan[2][2]-plan[2][3]-plan[2][4]-isr[0];
-        st_emp3.setText(""+plan[2][5]);
+            //le asigna el valor de 250 a la bonificacion
+            
+            if(verificacion[0]==1)
+            {
+                plan[2][1]=250;
+                boni_3.setText(""+plan[2][1]);
+            }
+            //verifica en que rango esta el suldo para calcular el isr
+            if(verificacion[4]==1)
+            {
+                if(sueldo_base[2]>=2600 && sueldo_base[2]<=5000)
+                {
+                    isr[2]=(int) (sueldo_base[2]*0.03);
+                    isr_3.setText(""+isr[2]);
+                }
+                else if(sueldo_base[2]>=5001 && sueldo_base[2]<=10000)
+                {
 
-        //se crea aleatoreamente en que departamento se establecera
+                    isr[2]=(int) (sueldo_base[2]*0.05);
+                    isr_3.setText(""+isr[2]);
 
+                }
+                else if(sueldo_base[2]>=10001 && sueldo_base[2]<=100000)
+                {
+
+                    isr[2]=(int) (sueldo_base[2]*0.10);
+                    isr_3.setText(""+isr[2]);
+
+                }
+            }
+            //hace la suma y restas para el sueldo liquido
+            plan[2][5]=sueldo_base[2]+plan[2][1]+plan[2][2]-plan[2][3]-plan[2][4]-isr[2];
+            st_emp3.setText(""+plan[2][5]);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        //crea el suldo conramdom de 2000 a 8000
-        plan[1][0]=2000+(int)(Math.random()*8000);
-        sb_emp2.setText(""+plan[1][0]);
-        for(int i=1; i<=4;i++)
-        {
-            //se asignan los valores para las sumas y restas no mayor de 500
-            plan[1][i]=100+(int)(Math.random()*500);
-            if(verificacion[1]==1)
+       SL=sb_emp2.getText();
+            sueldo_base[1]=Integer.parseInt(SL);
+            
+            
+            for(int i=1; i<=4;i++)
             {
-                comi_2.setText(""+plan[1][2]);
-            }
+                //se asignan los valores para las sumas y restas no mayor de 500
+                plan[1][i]=100+(int)(Math.random()*500);
+                if(verificacion[1]==1)
+                {
+                    comi_2.setText(""+plan[1][2]);
+                }
 
-            if(verificacion[2]==1)
-            {
-                ig_2.setText(""+plan[1][3]);
-            }
+                if(verificacion[2]==1)
+                {
+                    ig_2.setText(""+plan[1][3]);
+                }
 
-            if(verificacion[3]==1)
-            {
-                desc_2.setText(""+plan[1][4]);
-            }
-
-        }
-        //le asigna el valor de 250 a la bonificacion
-        plan[1][1]=250;
-        if(verificacion[0]==1)
-        {
-            boni_2.setText(""+plan[1][1]);
-        }
-        //verifica en que rango esta el suldo para calcular el isr
-        if(verificacion[4]==1)
-        {
-            if(plan[1][0]>=2600 && plan[1][0]<=5000)
-            {
-                isr[0]=(int) (plan[1][0]*0.03);
-                isr_2.setText(""+isr[0]);
-            }
-            else if(plan[1][0]>=5001 && plan[1][0]<=10000)
-            {
-
-                isr[0]=(int) (plan[1][0]*0.05);
-                isr_2.setText(""+isr[0]);
+                if(verificacion[3]==1)
+                {
+                    desc_2.setText(""+plan[1][4]);
+                }
 
             }
-        }
-        //hace la suma y restas para el sueldo liquido
-        plan[1][5]=plan[1][0]+plan[1][1]+plan[1][2]-plan[1][3]-plan[1][4]-isr[0];
-        st_emp2.setText(""+plan[1][5]);
+            //le asigna el valor de 250 a la bonificacion
+            
+            if(verificacion[0]==1)
+            {
+                plan[1][1]=250;
+                boni_2.setText(""+plan[1][1]);
+            }
+            //verifica en que rango esta el suldo para calcular el isr
+            if(verificacion[4]==1)
+            {
+                if(sueldo_base[1]>=2600 && sueldo_base[1]<=5000)
+                {
+                    isr[1]=(int) (sueldo_base[1]*0.03);
+                    isr_2.setText(""+isr[1]);
+                }
+                else if(sueldo_base[1]>=5001 && sueldo_base[1]<=10000)
+                {
+
+                    isr[1]=(int) (sueldo_base[1]*0.05);
+                    isr_2.setText(""+isr[1]);
+
+                }
+                else if(sueldo_base[1]>=10001 && sueldo_base[1]<=100000)
+                {
+
+                    isr[1]=(int) (sueldo_base[1]*0.10);
+                    isr_2.setText(""+isr[1]);
+
+                }
+            }
+            //hace la suma y restas para el sueldo liquido
+            plan[1][5]=sueldo_base[1]+plan[1][1]+plan[1][2]-plan[1][3]-plan[1][4]-isr[1];
+            st_emp2.setText(""+plan[1][5]);
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -1418,6 +1664,13 @@ public static int verificacion[]=new int [5];//este vector verifica que campos s
                     isr_1.setText(""+isr[0]);
 
                 }
+                else if(sueldo_base[0]>=10001 && sueldo_base[0]<=100000)
+                {
+
+                    isr[0]=(int) (sueldo_base[0]*0.10);
+                    isr_1.setText(""+isr[0]);
+
+                }
             }
             //hace la suma y restas para el sueldo liquido
             plan[0][5]=sueldo_base[0]+plan[0][1]+plan[0][2]-plan[0][3]-plan[0][4]-isr[0];
@@ -1433,7 +1686,7 @@ Verifica veri = new Verifica();
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        totp=plan[0][5];
+        totp=plan[0][5]+plan[1][5]+plan[2][5]+plan[3][5]+plan[4][5];
         lb_totPlanilla.setText(""+totp);
 
         // TODO add your handling code here:
@@ -1445,7 +1698,14 @@ Verifica veri = new Verifica();
         try{
             Connection cn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
             PreparedStatement pst = cn.prepareStatement("insert into encabezado_nomina(codigo_nomina,fecha_inicial_nomina,fecha_final_nomina,valor_nomina) values(?,?,?,?)");
-        
+         
+            int cod;
+            String codd;
+            
+            codd=txt_codPlanilla.getText();
+            cod=Integer.parseInt(codd);
+            txt_codPlanilla.setText(""+cod);
+            
             pst.setString(1, txt_codPlanilla.getText().trim());
             pst.setString(2,((JTextField)date_ini.getDateEditor().getUiComponent()).getText());
             pst.setString(3,((JTextField)date_fin.getDateEditor().getUiComponent()).getText());
@@ -1457,6 +1717,56 @@ Verifica veri = new Verifica();
         }catch (Exception e){
             System.out.println("Error "+e);
         }   
+        
+        
+        try{
+            Connection cn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+            PreparedStatement pst = cn.prepareStatement("insert into encabezado_nomina(codigo_nomina,fecha_inicial_nomina,fecha_final_nomina,valor_nomina) values(?,?,?,?)");
+         
+            int cod;
+            String codd;
+            
+            codd=txt_codPlanilla.getText();
+            cod=Integer.parseInt(codd);
+            txt_codPlanilla.setText(""+cod);
+            
+            pst.setString(1, txt_codPlanilla.getText().trim());
+            pst.setString(2,((JTextField)date_ini.getDateEditor().getUiComponent()).getText());
+            pst.setString(3,((JTextField)date_fin.getDateEditor().getUiComponent()).getText());
+            pst.setString(4, lb_totPlanilla.getText().trim());
+            pst.executeUpdate();
+            
+            txt_codPlanilla.setText("");            
+            lbMostrar.setText("Registro exitoso.");
+        }catch (Exception e){
+            System.out.println("Error "+e);
+        }   
+        
+        
+        try{
+            Connection cn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/bd_planilla", "root", "");
+            PreparedStatement pst = cn.prepareStatement("insert into encabezado_nomina(codigo_nomina,fecha_inicial_nomina,fecha_final_nomina,valor_nomina) values(?,?,?,?)");
+         
+            int cod;
+            String codd;
+            
+            codd=txt_codPlanilla.getText();
+            cod=Integer.parseInt(codd);
+            txt_codPlanilla.setText(""+cod);
+            
+            pst.setString(1, txt_codPlanilla.getText().trim());
+            pst.setString(2,((JTextField)date_ini.getDateEditor().getUiComponent()).getText());
+            pst.setString(3,((JTextField)date_fin.getDateEditor().getUiComponent()).getText());
+            pst.setString(4, lb_totPlanilla.getText().trim());
+            pst.executeUpdate();
+            
+            txt_codPlanilla.setText("");            
+            lbMostrar.setText("Registro exitoso.");
+        }catch (Exception e){
+            System.out.println("Error "+e);
+        }   
+        
+        
    
 
 
@@ -1464,6 +1774,76 @@ Verifica veri = new Verifica();
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void txt_codPlanillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_codPlanillaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_codPlanillaActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        dispose();
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void CB_emp2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_emp2ActionPerformed
+
+        String StrCB_emp2 = CB_emp2.getSelectedItem().toString();
+       
+        try {
+            buscarEmp2(StrCB_emp2);
+        } catch (SQLException ex) {
+            Logger.getLogger(Planilla.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CB_emp2ActionPerformed
+
+    private void CB_emp3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_emp3ActionPerformed
+String StrCB_emp3 = CB_emp3.getSelectedItem().toString();
+        try {
+            buscarEmp3(StrCB_emp3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Planilla.class.getName()).log(Level.SEVERE, null, ex);
+        }    // TODO add your handling code here:
+    }//GEN-LAST:event_CB_emp3ActionPerformed
+
+    private void CB_emp4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_emp4ActionPerformed
+String StrCB_emp4 = CB_emp4.getSelectedItem().toString();
+        try {
+            buscarEmp4(StrCB_emp4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Planilla.class.getName()).log(Level.SEVERE, null, ex);
+        }    // TODO add your handling code here:
+    }//GEN-LAST:event_CB_emp4ActionPerformed
+
+    private void CB_emp5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CB_emp5ActionPerformed
+String StrCB_emp5 = CB_emp5.getSelectedItem().toString();
+        try {
+            buscarEmp5(StrCB_emp5);
+        } catch (SQLException ex) {
+            Logger.getLogger(Planilla.class.getName()).log(Level.SEVERE, null, ex);
+        }     // TODO add your handling code here:
+    }//GEN-LAST:event_CB_emp5ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+Verifica veri = new Verifica();
+        veri.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+Verifica veri = new Verifica();
+        veri.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+Verifica veri = new Verifica();
+        veri.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+Verifica veri = new Verifica();
+        veri.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton18ActionPerformed
 
     public static void main(String args[]) {
         
@@ -1501,6 +1881,10 @@ Verifica veri = new Verifica();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CB_emp1;
+    private javax.swing.JComboBox<String> CB_emp2;
+    private javax.swing.JComboBox<String> CB_emp3;
+    private javax.swing.JComboBox<String> CB_emp4;
+    private javax.swing.JComboBox<String> CB_emp5;
     private javax.swing.JLabel boni_1;
     private javax.swing.JLabel boni_10;
     private javax.swing.JLabel boni_2;
@@ -1587,10 +1971,6 @@ Verifica veri = new Verifica();
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox10;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
